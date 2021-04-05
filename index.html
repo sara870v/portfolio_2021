@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7ffcd89003.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script>
+      window.sr = ScrollReveal({
+        distance: "50px",
+        duration: 1000,
+        easing: "ease",
+        mobile: true,
+        reset: true,
+        viewFactor: 0.4
+      });
+    </script>
+    <title>Sarah Davidsen</title>
+</head>
+<body>
+ <nav>
+
+<div class="menu_burger">
+    <div class="overlay">
+        <div class="overlay_content">
+            <div class="burger_top">
+                
+                <a href="javascript:void(0)" class="closebtn">&times;</a>
+            </div>
+
+            <div class="burger_links">
+            <a href="index.html" class="link">Forside</a>
+            <a href="info.html" class="link">Om mig</a>
+             <a href="contact.html" class="link">Kontakt</a>
+            </div>
+
+            <div class="burger_logo">
+                <img src="images/logo.svg" alt="">
+            </div>
+        </div>
+
+    </div>
+<div class="burger">
+<div class="burger_line"></div>
+<div class="burger_line"></div>
+<div class="burger_line"></div>
+</div>
+
+</div>
+<div class="menu_web">
+     <div class="nav_logo">
+        <a href="index.html">
+         <img src="images/logo.svg" alt="logo">
+        </a>
+     </div>
+     <div class="nav_links">
+     <a href="index.html" class="link">Forside</a>
+    <a href="info.html" class="link">Om mig</a>
+     <a href="contact.html" class="link">Kontakt</a>
+    </div>
+</div>
+ </nav>
+
+
+<section class="part_1">
+<div class="part_1_box">
+<div class="part_1_text">
+    <h1>Forside</h1>
+<p>Velkommen til mit website/portefølje
+    <br>
+    På denne forside kan du se min portefølje, med de projekter jeg har arbejdet med i løbet af tiden. 
+    <br>
+    Udover dette, kan du finde informationer om mig, mine færdigheder, mit CV, samt finde mine kontaktinformationer.
+</p> 
+       <a href="#part_4"><button>Portefølje</button></a>
+       
+</div>
+
+</div>
+
+</section>
+
+
+<section class="part_3">
+
+<img src="images/background.jpg" alt="background">
+
+    <div class="part_3_text">
+ 
+<p>Jeg har gennem min uddanelse som multimediedesigner, og nu snart 1 år inde i min top-op uddannelse, udviklet mig og fået flere erfaringer og kompetencer. <br>Det kan du se mere om hvis du følger knappen hernede.</p>
+    <a href="info.html"><button>Om mig</button></a>
+    </div>
+  
+    
+</section>
+
+
+
+<section id="part_4">
+    <h2>Portefølje</h2>
+    <div class="part_4_overall">
+    <div class="part_4_info">
+        <h2>Blackjack</h2>
+        <p>Dette projekt var på mit frontend-development valgfag på 3. semester. Her har jeg primært haft fokus på vores administrative side, hvor man kan få et overblik over brugere, samt tilpasse brugeren. Det er lavet via react.</p>
+        <a href="http://sarahdavidsen.dk/kea/3_semester/exam_2019/admin/" target="_blank"><button>Link til case</button></a>
+    </div>
+    <div class="part_4_image">
+        <img src="/images/project.jpg" alt="Project">
+    </div>
+</div>
+<div class="part_4_overall">
+    <div class="part_4_info">
+        <h2>Twitter</h2>
+        <p>I dette projekt har jeg anvendt en NoSQL database, nemlig MySQL til at bygge en kopi af Twitter. Til dette har jeg også anvendt PHP som backend sprog. </p>
+        <p>Jeg vil med glæde vise projektet frem til en samtale.</p>
+        <!-- <a href="contact.html"><button>Link til case</button></a> -->
+    </div>
+    <div class="part_4_image">
+        <img src="/images/er_diagram.png" alt="Project">
+    </div>
+</div>
+<div class="part_4_overall">
+    <div class="part_4_info">
+        <h2>aBrief</h2>
+        <p>Dette projekt har været udelukkende baseret på UI/UX, hvor jeg har haft fokus på analyser, testing og design. </p>
+        <a href="https://abrief-80e6b.web.app/init" target="_blank"><button>Link til case</button></a>
+    </div>
+    <div class="part_4_image">
+        <img src="/images/abrief.png" alt="Project">
+    </div>
+</div>
+</section>
+
+ <footer>
+
+    <div>
+        <h4>Sarahdavidsen@hotmail.com</h4>
+    </div>
+
+     <div class="footer_links">
+         <a href="https://www.facebook.com/sarah.davidsen" target="_blank">
+         <img src="/images/facebook.svg" alt="facebook">
+        </a>
+        <a href="https://www.linkedin.com/in/sarah-davidsen-7a6b54195/" target="_blank">
+         <img src="/images/linkedin.svg" alt="linkedin">
+        </a>
+     </div>
+
+     <div>
+        <h4>Tlf: 53 60 67 43</h4> 
+        </div>
+ </footer>
+
+ <script>
+             sr.reveal("h1",  {
+          origin: "right"
+        });
+
+        sr.reveal(".part_4_info",  {
+          origin: "left"
+        });
+ </script>
+</body>
+
+<script src="app.js"></script>
+</html>

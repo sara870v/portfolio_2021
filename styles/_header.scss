@@ -1,0 +1,135 @@
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  .menu_web {
+    @include flexCenter();
+    // display: flex;
+    justify-content: space-around;
+    padding: 30px 0px;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 100;
+
+    background: $white;
+    font-size: 20px;
+
+    .nav_logo {
+      width: 250px;
+    }
+
+    .nav_links {
+      display: flex;
+      flex-direction: row;
+      a {
+        margin: 0px 30px;
+        color: black;
+        text-decoration: none;
+      }
+    }
+
+    .link::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #000;
+      transition: width 0.3s;
+    }
+
+    .link:hover::after {
+      width: 100%;
+      transition: width 0.3s;
+    }
+  }
+
+  .menu_burger {
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    background: $white;
+
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+
+    .overlay {
+      width: 0;
+      height: 100vh;
+
+      background: $pink;
+      opacity: 0.95;
+      display: none;
+      // transform: translate(10%, 0%);
+      transition: 0.5s;
+      transition-duration: 2s;
+      // transition-timing-function: linear;
+
+      .overlay_content {
+        display: flex;
+        flex-direction: column;
+
+        .burger_top {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding: 30px;
+
+          a {
+            color: $black;
+            font-size: 60px;
+            text-decoration: none;
+          }
+        }
+
+        .burger_links {
+          display: flex;
+          flex-direction: column;
+          padding: 30px;
+          text-align: center;
+
+          a {
+            color: $black;
+            text-decoration: none;
+            font-size: 20px;
+            line-height: 50px;
+          }
+
+          a:visited {
+            color: $black;
+          }
+        }
+
+        .burger_logo {
+          position: fixed;
+          bottom: 40px;
+          left: 47px;
+          img {
+            width: 150px;
+          }
+        }
+      }
+    }
+
+    .overlay::after {
+      transition: all 0.5s ease;
+    }
+
+    .burger {
+      padding: 30px;
+      .burger_line {
+        width: 30px;
+        height: 1px;
+        background: $black;
+        display: block;
+        margin-top: 10px;
+      }
+    }
+  }
+}

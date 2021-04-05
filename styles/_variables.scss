@@ -1,0 +1,76 @@
+// Colors
+
+$beige: #e6dcd2;
+$beige_second: #ebdecf;
+$brown: #b2895f;
+$pink: #dfcdc6;
+$green: #8e7a41;
+$white: #ffffff;
+$black: #222222;
+
+// Fonts
+$headline: "Playfair Display", serif;
+$text: "Raleway", sans-serif;
+
+p,
+a,
+ul {
+  font-family: $text;
+  line-height: 35px;
+}
+
+h1 {
+  font-family: $headline;
+  font-size: 40px;
+}
+h2 {
+  font-family: $headline;
+  font-size: 35px;
+}
+h3 {
+  font-family: $headline;
+  font-size: 30px;
+}
+h4 {
+  font-family: $headline;
+  font-size: 25px;
+}
+
+button {
+  width: 200px;
+  margin: 20px;
+  padding: 20px 40px;
+  background: none;
+  border: none;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+button:after,
+button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 2px solid #000;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+button:after {
+  -webkit-transform: translate(3px, 3px);
+  transform: translate(3px, 3px);
+}
+button:before {
+  -webkit-transform: translate(-3px, -3px);
+  transform: translate(-3px, -3px);
+}
+button:hover:after,
+button:hover:before {
+  -webkit-transform: translate(0);
+  transform: translate(0);
+}
