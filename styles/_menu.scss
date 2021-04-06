@@ -20,6 +20,10 @@
     .part_1_box {
       width: 75vw;
       height: 50vh;
+
+      .part_1_text {
+        width: 500px;
+      }
     }
   }
 
@@ -67,7 +71,7 @@
       display: flex;
       flex-direction: column;
       width: 90vw;
-      margin: 40px 40px 0 40px;
+      margin: 150px 40px 0 40px;
 
       h1 {
         text-align: center;
@@ -83,6 +87,7 @@
   //contact
 
   .part_contact {
+    margin-top: 200px;
     img {
       width: 100vw;
     }
@@ -131,9 +136,14 @@
   }
 
   .part_1 {
+    img {
+      height: 100vh;
+    }
+
     .part_1_box {
       background: transparent;
       .part_1_text {
+        margin-top: 80px;
         background: $beige;
       }
     }
@@ -219,7 +229,7 @@
   }
 
   .part_5 {
-    margin: 0;
+    margin: 150px auto;
     flex-direction: column-reverse;
     .part_5_image {
       display: flex;
@@ -251,10 +261,13 @@
     }
   }
 
-  // .part_7 {
-  //   // height: 100vh;
-  //   img {
-  //     height: 20vh;
-  //   }
-  // }
+  .part_contact {
+    margin-top: 250px;
+
+    .part_contact_text {
+      h2 {
+        font-size: 20px;
+      }
+    }
+  }
 }
